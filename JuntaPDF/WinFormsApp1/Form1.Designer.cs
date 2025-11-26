@@ -50,7 +50,7 @@
             // btnAddFiles
             // 
             btnAddFiles.Location = new Point(37, 64);
-            btnAddFiles.Margin = new Padding(6, 6, 6, 6);
+            btnAddFiles.Margin = new Padding(6);
             btnAddFiles.Name = "btnAddFiles";
             btnAddFiles.Size = new Size(223, 75);
             btnAddFiles.TabIndex = 0;
@@ -61,7 +61,7 @@
             // btnRemoveFiles
             // 
             btnRemoveFiles.Location = new Point(279, 64);
-            btnRemoveFiles.Margin = new Padding(6, 6, 6, 6);
+            btnRemoveFiles.Margin = new Padding(6);
             btnRemoveFiles.Name = "btnRemoveFiles";
             btnRemoveFiles.Size = new Size(223, 75);
             btnRemoveFiles.TabIndex = 1;
@@ -74,7 +74,7 @@
             btnMergePdfs.BackColor = Color.FromArgb(0, 122, 204);
             btnMergePdfs.ForeColor = Color.White;
             btnMergePdfs.Location = new Point(37, 171);
-            btnMergePdfs.Margin = new Padding(6, 6, 6, 6);
+            btnMergePdfs.Margin = new Padding(6);
             btnMergePdfs.Name = "btnMergePdfs";
             btnMergePdfs.Size = new Size(279, 85);
             btnMergePdfs.TabIndex = 2;
@@ -85,7 +85,7 @@
             // btnClear
             // 
             btnClear.Location = new Point(520, 64);
-            btnClear.Margin = new Padding(6, 6, 6, 6);
+            btnClear.Margin = new Padding(6);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(223, 75);
             btnClear.TabIndex = 3;
@@ -100,7 +100,7 @@
             listViewFiles.FullRowSelect = true;
             listViewFiles.GridLines = true;
             listViewFiles.Location = new Point(37, 64);
-            listViewFiles.Margin = new Padding(6, 6, 6, 6);
+            listViewFiles.Margin = new Padding(6);
             listViewFiles.Name = "listViewFiles";
             listViewFiles.Size = new Size(1111, 529);
             listViewFiles.TabIndex = 4;
@@ -131,7 +131,7 @@
             // 
             progressBar.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             progressBar.Location = new Point(37, 1109);
-            progressBar.Margin = new Padding(6, 6, 6, 6);
+            progressBar.Margin = new Padding(6);
             progressBar.Name = "progressBar";
             progressBar.Size = new Size(1245, 49);
             progressBar.TabIndex = 5;
@@ -151,7 +151,7 @@
             // 
             btnMoveUp.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnMoveUp.Location = new Point(1189, 64);
-            btnMoveUp.Margin = new Padding(6, 6, 6, 6);
+            btnMoveUp.Margin = new Padding(6);
             btnMoveUp.Name = "btnMoveUp";
             btnMoveUp.Size = new Size(56, 64);
             btnMoveUp.TabIndex = 7;
@@ -163,7 +163,7 @@
             // 
             btnMoveDown.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnMoveDown.Location = new Point(1189, 149);
-            btnMoveDown.Margin = new Padding(6, 6, 6, 6);
+            btnMoveDown.Margin = new Padding(6);
             btnMoveDown.Name = "btnMoveDown";
             btnMoveDown.Size = new Size(56, 64);
             btnMoveDown.TabIndex = 8;
@@ -178,9 +178,9 @@
             groupBoxFiles.Controls.Add(btnMoveUp);
             groupBoxFiles.Controls.Add(btnMoveDown);
             groupBoxFiles.Location = new Point(37, 43);
-            groupBoxFiles.Margin = new Padding(6, 6, 6, 6);
+            groupBoxFiles.Margin = new Padding(6);
             groupBoxFiles.Name = "groupBoxFiles";
-            groupBoxFiles.Padding = new Padding(6, 6, 6, 6);
+            groupBoxFiles.Padding = new Padding(6);
             groupBoxFiles.Size = new Size(1263, 640);
             groupBoxFiles.TabIndex = 9;
             groupBoxFiles.TabStop = false;
@@ -194,9 +194,9 @@
             groupBoxActions.Controls.Add(btnClear);
             groupBoxActions.Controls.Add(btnMergePdfs);
             groupBoxActions.Location = new Point(37, 725);
-            groupBoxActions.Margin = new Padding(6, 6, 6, 6);
+            groupBoxActions.Margin = new Padding(6);
             groupBoxActions.Name = "groupBoxActions";
-            groupBoxActions.Padding = new Padding(6, 6, 6, 6);
+            groupBoxActions.Padding = new Padding(6);
             groupBoxActions.Size = new Size(1263, 299);
             groupBoxActions.TabIndex = 10;
             groupBoxActions.TabStop = false;
@@ -211,11 +211,14 @@
             Controls.Add(groupBoxFiles);
             Controls.Add(lblStatus);
             Controls.Add(progressBar);
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
+            MaximizeBox = false;
+            MinimizeBox = false;
             MinimumSize = new Size(1092, 986);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Unificador de PDFs - Seguro e Local";
+            Load += Form1_Load;
             groupBoxFiles.ResumeLayout(false);
             groupBoxActions.ResumeLayout(false);
             ResumeLayout(false);

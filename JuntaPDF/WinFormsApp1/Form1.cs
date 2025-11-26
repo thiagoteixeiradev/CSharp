@@ -293,5 +293,10 @@ namespace WinFormsApp1
             lblStatus.Text = message;
             Application.DoEvents();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
